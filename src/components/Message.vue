@@ -43,7 +43,7 @@ export default {
     padding: 5px 12px 6px
     color: #303030
     font-size: 14.2px
-    max-width: calc(50% - 10px)
+    max-width: calc(80% - 10px)
   &.incoming
     margin-left: 20px
     .svg-tail

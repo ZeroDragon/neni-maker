@@ -1,5 +1,6 @@
 <template lang="pug">
 .display
+  System
   Header
   .messages
     Message(
@@ -55,17 +56,27 @@
 
 <script>
 import Message from '@/components/Message'
+import System from '@/components/System'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 export default {
   name: 'Display',
-  components: { Message, Header, Footer }
+  components: { Message, Header, Footer, System }
 }
 </script>
 
 <style lang="stylus">
 .display
-  width: 50%
+  width: 450px
+  min-width: 450px
   height: 100%
   background-image: url('/images/wa001.png')
+  display: flex
+  flex-direction: column
+  .messages
+    flex-grow: 1
+    overflow: auto
+    margin-top: 2px
+    &::-webkit-scrollbar
+      display: none
 </style>
