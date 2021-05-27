@@ -1,17 +1,24 @@
 <template lang="pug">
 .home
-  img(alt="Vue logo" src="../assets/logo.png")
-  HelloWorld(msg="welcome to your Vue.js App")
+  Display
+  Editor
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import Display from '@/components/Display'
+import Editor from '@/components/Editor'
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    Display,
+    Editor
   }
 }
 </script>
+
+<style lang="stylus">
+.home
+  display: flex
+  width: 100%
+  height: 100vh
+</style>
