@@ -4,9 +4,10 @@
     span.material-icons arrow_back
   .otherUser
     .avatar
+      img(:src="avatar")
     .userInfo
-      .name La castrosa
-      .status online
+      .name {{name}}
+      .status {{status}}
   .camera.icon
     span.material-icons videocam
   .phone.icon
@@ -14,6 +15,24 @@
   .menu.icon
     span.material-icons more_vert
 </template>
+
+<script>
+export default {
+  name: 'Header',
+  computed: {
+    avatar () {
+      return this.$store.state.avatar
+    },
+    name () {
+      return this.$store.state.name
+    },
+    status () {
+      return this.$store.state.status
+    }
+  }
+}
+</script>
+
 <style lang="stylus">
 .header
   background-color: #075E54
@@ -35,14 +54,18 @@
     .avatar
       width: 45px
       height: 45px
-      background-color: #ccc
       border-radius: 50%
+      img
+        width: 45px
+        height: 45px
+        object-fit: cover
+        border-radius: 50%
     .userInfo
       margin-left: 10px
       flex-grow: 1
       .name
         font-size: 22px
-        line-height: 24px
+        line-height: 27px
         white-space: nowrap
         overflow: hidden
         text-overflow: ellipsis

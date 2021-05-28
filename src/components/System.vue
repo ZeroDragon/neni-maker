@@ -1,7 +1,7 @@
 <template lang="pug">
 .system
   .left
-    .time 8:18 PM
+    .time {{time}}
   .right
     .icon: span.material-icons bluetooth
     .icon: span.material-icons access_alarm
@@ -11,6 +11,16 @@
     .battery 15%
 
 </template>
+<script>
+export default {
+  name: 'System',
+  computed: {
+    time () {
+      return this.$store.state.time
+    }
+  }
+}
+</script>
 <style lang="stylus" scoped>
 .system
   display: flex
