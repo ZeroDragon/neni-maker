@@ -7,6 +7,7 @@
     .icon: span.material-icons camera_alt
   .icon.alt: span.material-icons mic
 </template>
+
 <script>
 import Smiley from '@/assets/smiley'
 import Clip from '@/assets/clip'
@@ -15,6 +16,7 @@ export default {
   components: { Smiley, Clip }
 }
 </script>
+
 <style lang="stylus">
 .footer
   height: 60px
