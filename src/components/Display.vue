@@ -1,5 +1,5 @@
 <template lang="pug">
-.display
+.display(:style="{ 'background-image': `url(${publicPath}images/wa001.png)` }")
   System
   Header
   .messages
@@ -23,10 +23,14 @@ export default {
   computed: {
     messages () {
       return this.$store.state.messages
+    },
+    publicPath () {
+      return this.$store.state.publicPath
     }
   },
   components: { Message, Header, Footer, System }
 }
+console.log(global.publicPath)
 </script>
 
 <style lang="stylus">
@@ -34,7 +38,6 @@ export default {
   width: 450px
   min-width: 450px
   height: 100%
-  background-image: url('/images/wa001.png')
   display: flex
   flex-direction: column
   .messages

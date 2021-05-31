@@ -10,12 +10,15 @@ const initialTime = () => {
   }).replace(' ', '')
 }
 
+const publicPath = process.env.NODE_ENV === 'production' ? '/neni-maker/' : '/'
+
 export default createStore({
   state: {
     time: initialTime(),
-    avatar: '/images/avatar.png',
+    avatar: `${publicPath}images/avatar.png`,
     name: 'El Shrexican',
-    status: 'online'
+    status: 'online',
+    publicPath
   },
   mutations: {
     update (state, { item, value }) {
