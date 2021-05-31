@@ -44,7 +44,8 @@ export default {
   justify-content: space-between
   align-items: center
   .icon
-    width: 60px
+    width: 45px
+    max-width: 45px
     text-align: center
     span
       font-size: 30px
@@ -69,6 +70,7 @@ export default {
         white-space: nowrap
         overflow: hidden
         text-overflow: ellipsis
+        max-width: 215px
       .status
         font-size: 14px
         opacity: 0.7

@@ -1,8 +1,17 @@
 import { createStore } from 'vuex'
 
+const initialTime = () => {
+  const d = new Date()
+  return d.toLocaleString('en-US', {
+    hour: 'numeric',
+    minute: 'numeric',
+    hour12: true
+  }).replace(' ', '')
+}
+
 export default createStore({
   state: {
-    time: '7:10PM',
+    time: initialTime(),
     avatar: '/images/avatar.png',
     name: 'El Shrexican',
     status: 'online'

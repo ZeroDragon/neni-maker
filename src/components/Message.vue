@@ -83,6 +83,8 @@ export default {
       background-color: #e1f5fe
       color: #4a4a4a
       text-align: center
+    .time
+      display: none
 .message.system + .message.incoming
   padding-top: 10px
 .message.system + .message.outgoing

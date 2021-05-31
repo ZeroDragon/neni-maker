@@ -6,6 +6,7 @@
     Message(
       type="system",
       text="YESTERDAY"
+      time="9:04PM"
     )
     Message(
       type="incoming",
