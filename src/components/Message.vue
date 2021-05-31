@@ -24,7 +24,7 @@ export default {
   position: relative
   .txtHolder
     position: relative
-    padding-right: 50px
+    padding-right: 60px
     text-align: left
     .time
       font-size: 11px
@@ -46,6 +46,8 @@ export default {
     max-width: calc(80% - 10px)
   &.incoming
     margin-left: 20px
+    .txtHolder
+      padding-right: 45px
     .svg-tail
       display: block
       top: 10px
@@ -83,6 +85,7 @@ export default {
       background-color: #e1f5fe
       color: #4a4a4a
       text-align: center
+      text-transform: uppercase
     .time
       display: none
 .message.system + .message.incoming
