@@ -26,7 +26,7 @@ system
 hoy
 =====
 incoming
-Ah, ya no me interesa
+Ah, ya no me interesa, gracias por perder mi tiempo
 12:25PM
 `
 export default {
