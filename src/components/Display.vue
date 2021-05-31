@@ -30,7 +30,6 @@ export default {
   },
   components: { Message, Header, Footer, System }
 }
-console.log(global.publicPath)
 </script>
 
 <style lang="stylus">
