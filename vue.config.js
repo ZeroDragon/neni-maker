@@ -1,4 +1,5 @@
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'production' ? '/neni-maker/' : '/',
   chainWebpack: config => {
     config
       .plugin('html')
