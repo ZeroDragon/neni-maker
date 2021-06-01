@@ -7,6 +7,10 @@
   br
   | Mensajes
   textarea(:value="rawText", @input="updateChat($event.target.value)")
+  div
+    |si te gusta esto, considera hacer una&nbsp;
+    a(href="https://creadores.fans/zerodragon" target="_blank") donación
+    | &nbsp;:3
 </template>
 
 <script>
@@ -62,4 +66,6 @@ export default {
     border: none
     outline: none
     padding: 10px
+  a
+    color: aqua
 </style>
