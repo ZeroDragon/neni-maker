@@ -26,7 +26,7 @@ jobs:
       - name: Install
         if: steps.npm-cache.outputs.cache-hit != 'true'
         run: |
-          npm i
+          npm install
 
       - name: Build
         run: |
