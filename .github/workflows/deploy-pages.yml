@@ -16,7 +16,7 @@ jobs:
           cache-name: cache-node-modules
         id: npm-cache
         with:
-          path: ~/.npm
+          path: ./node_modules
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-build-${{ env.cache-name }}-
@@ -26,8 +26,8 @@ jobs:
       - name: Install
         if: steps.npm-cache.outputs.cache-hit != 'true'
         run: |
-          npm ci
-          
+          npm i
+
       - name: Build
         run: |
           npm run build
