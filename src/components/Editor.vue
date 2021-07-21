@@ -12,7 +12,7 @@
     a(href="https://creadores.fans/zerodragon" target="_blank") donación
     | &nbsp;:3
     br
-    | O suscríbete a mi patreon para que siga subiendo chingadeas xD
+    | O suscríbete a mi patreon para que siga subiendo chingadeas xD&nbsp;
     a(href="https://patreon.com/zerodragon") Suscribirse
     | &nbsp;:3
 </template>
