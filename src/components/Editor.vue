@@ -8,8 +8,12 @@
   | Mensajes
   textarea(:value="rawText", @input="updateChat($event.target.value)")
   div
-    |si te gusta esto, considera hacer una&nbsp;
+    | si te gusta esto, considera hacer una&nbsp;
     a(href="https://creadores.fans/zerodragon" target="_blank") donación
+    | &nbsp;:3
+    br
+    | O suscríbete a mi patreon para que siga subiendo chingadeas xD
+    a(href="https://patreon.com/zerodragon") Suscribirse
     | &nbsp;:3
 </template>
 
