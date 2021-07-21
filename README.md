@@ -1,4 +1,8 @@
-# neni-maker
+neni-maker
+============
+
+This Project was build just for fun. Feel free to contribute
+You can see latest build on https://zerodragon.github.io/neni-maker/
 
 ## Project setup
 ```
